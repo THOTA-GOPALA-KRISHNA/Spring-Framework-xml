@@ -1,0 +1,48 @@
+Q)why Spring frame work coming into picture?
+A)
+1) Java Developement was Too complex
+( Before spring , enterprise Java apps used EJB containers ,which were:
+    .Very heavyweight
+    .Required complex XML configuration
+    .Needed appliclation servers like Weblogic, WebSphere
+    .Hard to test and maintain)
+    Spring solves all the above problems
+2) To Provide Lightweight Development
+ Spring introduced:
+ .POJOs
+ .No need for heavy server
+ .Easy and fast development
+and so many.....
+
+In single line - Spring came into picture to make java development simple,LEIGHTWEIGHT, FAST and Flexible by IOc and
+Dependency Injection(DI)
+
+
+Q) what is IOC?
+A)IOC - Inversion of control, which means it control the bean(Object) life cycle(creating , managing , destroying)
+
+Here you can imagine there is IOC container which stores the all the beans
+
+Q) What is dependency Injection?
+A) Dependency injection is pattern or technique where Spring injects(provides) the required objects into a class,
+instead of te class creating them itself
+
+(By using @Autowired annotation you can achieve this)
+
+
+Total we have 2 type based spring framework
+1st one is xml based and
+2nd one is java based
+
+---------XML BASED------------
+IN General we have different types beans scopes, but we will discuss only two
+1) single tone (By default single is assigned to bean, it allows creating only single bean and when ClasspathXml is called
+automatically object will be created)
+2)Prototype(It allows to create multiple beans, and it will created only when call getBean() method.
+
+Setter Injection----------
+By using property attribute in bean we can set the value for a particular var by default
+By using constructor-arg we call the parametarized constructor by providing the value and by using index/type we can
+maintain the order
+--> Autowired byName or byType we can inject the objects into class
+By using lazy-init it will create the bean only when it requires

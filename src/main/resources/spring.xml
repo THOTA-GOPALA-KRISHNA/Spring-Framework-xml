@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="car" class="org.gopal.Car">
+    <constructor-arg  index="0" value="250">
+    </constructor-arg>
+    <constructor-arg index="1" ref="tata1">
+    </constructor-arg>
+    <property name="cc" value="1024">
+    </property>
+    <property name="tata" ref="tata1">
+    </property>
+</bean>
+    <bean id = "tata1" class="org.gopal.TATA" scope="prototype">
+    </bean>
+
+</beans>
