@@ -46,3 +46,20 @@ By using constructor-arg we call the parametarized constructor by providing the 
 maintain the order
 --> Autowired byName or byType we can inject the objects into class
 By using lazy-init it will create the bean only when it requires
+
+
+----------------------------------------------
+
+-->Java Based config Here we will use AnnotationConfigApplicationContext class to store the beans asn we will create one
+config class
+--> The config class is annotated with @configuration which is used to define spring configuration class.
+--> @Configuration tells Spring that tha class contains bean definitions and should be processed by the Spring container.
+--> @Bean is used to define the bean in the config class
+--> By using @Scope annotation we define the scope of the bean.
+--> By using @Qualifier we can explicitly ref to the particular bean
+--> By using @primary annotation we give the priority to the bean
+--> @Component annotation is used to tells Spring needs to handle that particular class
+--> @ComponentScan(package) will create beans based on the which class has @Component
+--> @Autowired is used to inject one object into another automatically by Spring. This is part of Dependency Injection
+--> if you mention primary and qualifier , qualifier takes first
+--> By using @Value we set the values from the property files.

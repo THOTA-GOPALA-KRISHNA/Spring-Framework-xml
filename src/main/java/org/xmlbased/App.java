@@ -1,4 +1,4 @@
-package org.gopal;
+package org.xmlbased;
 
 
 import org.springframework.context.ApplicationContext;

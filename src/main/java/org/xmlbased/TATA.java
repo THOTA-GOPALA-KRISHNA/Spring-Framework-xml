@@ -1,4 +1,4 @@
-package org.gopal;
+package org.xmlbased;
 
 public class TATA {
 

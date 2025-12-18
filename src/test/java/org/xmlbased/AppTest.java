@@ -1,4 +1,4 @@
-package org.gopal;
+package org.xmlbased;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
